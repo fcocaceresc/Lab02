@@ -1,21 +1,15 @@
 package model;
 
-import model.Dado;
+import controller.JuegoDados;
 
-import java.util.Random;
 
 public class Jugador {
-    private Dado dado1;
+    private JuegoDados juego1;
 
     public Jugador() {
-        dado1 = new Dado();
+        juego1 = new JuegoDados();
     }
-    private void lanzarDado(Dado dado) {
-        dado.setCaraSuperior(new Random().nextInt(6) + 1);
+    private void Juego(){
+        juego1.obtenerResultado();
     }
-    public int lanzamientoJugador(){
-    lanzarDado(dado1);
-        return dado1.getCaraSuperior();
-    }
-
 }
