@@ -1,9 +1,21 @@
 package model;
 import java.util.Random;
 public class Dado {
-    public static int main(String[] args) {
-        Random tirada = new Random();
-        return tirada.nextInt(6) + 1;
+    private int caraSuperior;
+
+    public Dado() {
+        this.caraSuperior = 1;
+    }
+
+    public void lanzar() {
+        setCaraSuperior(new Random().nextInt(6) + 1);
+    }
+
+    public int getCaraSuperior() {
+        return caraSuperior;
+    }
+
+    public void setCaraSuperior(int caraSuperior) {
+        this.caraSuperior = caraSuperior;
     }
 }
-//
