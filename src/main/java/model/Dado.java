@@ -6,3 +6,4 @@ public class Dado {
         return tirada.nextInt(6) + 1;
     }
 }
+//
