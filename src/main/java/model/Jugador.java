@@ -2,14 +2,28 @@ package model;
 
 import controller.JuegoDados;
 
-
 public class Jugador {
-    private JuegoDados juego1;
+    private JuegoDados juegoDados;
+    private int puntaje;
 
     public Jugador() {
-        juego1 = new JuegoDados();
+        this.juegoDados = new JuegoDados();
+        this.puntaje = 0;
     }
-    private void Juego(){
-        juego1.obtenerResultado();
+
+    public JuegoDados getJuegoDados() {
+        return juegoDados;
+    }
+
+    public int getPuntaje() {
+        return puntaje;
+    }
+
+    public void setPuntaje(int puntaje) {
+        this.puntaje = puntaje;
+    }
+
+    public void incrementarPuntaje() {
+        this.puntaje++;
     }
 }
