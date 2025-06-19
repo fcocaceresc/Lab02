@@ -7,10 +7,6 @@ public class Dado {
         this.caraSuperior = 1;
     }
 
-    public void lanzar() {
-        setCaraSuperior(new Random().nextInt(6) + 1);
-    }
-
     public int getCaraSuperior() {
         return caraSuperior;
     }
